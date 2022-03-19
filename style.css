@@ -12,8 +12,6 @@
     height: 100vh;
     background-position: center;
     background-attachment: fixed;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 .container1{
     padding-bottom: 30px;
@@ -21,8 +19,9 @@
 .header{
     display: flex;
     justify-content:space-between;
-    padding-top: 15px;
-    padding-left: 25px;
+    padding: 15px 25px;
+    position: fixed;
+    width:100%;
 }
 .csi{
     font-size: 20px;
@@ -33,7 +32,7 @@
 }
 .bicon{
     display:flex;
-    margin-right:20px;
+    margin-right:40px;
     
 }
 .buttons{
@@ -102,13 +101,14 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin-top:20px 0;
 }
 .img_box{
      height:180px; 
      width:180px;
      opacity: 0.9;
      transition:all ease-in-out 1s;
+     margin-top:60px;
 }
 
 .img_box:hover{ 
@@ -151,16 +151,33 @@
     height:1000px;
     width:100%;
     background-color:rgb(233, 229, 229);
-    padding-top :45px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:45px 30px;
 }
- .contentbox1{ 
-    height:330px;
-    width:1100px;
-    background-color:white;
-    background-image: url(/images/vintage.jpg);
-    background-size: 400px 330px;
-    background-repeat:no-repeat ;
+ .box1{ 
+    display: flex;
+ }
+ .text{
+     width:800px;
+     background-color:white;
+     padding: 20px;
+     font-family: arial;
+     font-size: 18px;
+ }
+ .content{
+     color:gray;
+ }
+ .rules-button{
+     background-color:transparent;
+     color:darkgreen;
+     font-size:20px;
+     font-weight:100;
+     border:1.5px solid darkgreen;
+     padding:10px 20px;
+     transition:
+ }
+ .rules-button:hover{
+     
  }
