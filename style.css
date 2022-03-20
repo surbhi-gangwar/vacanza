@@ -75,8 +75,17 @@
     width:40px;
     background-color: white;
     border-radius: 100%;
-    
+    transition: all ease-in-out 2s;
 }
+.hamicon:hover .line1{
+    transform: rotate(deg);
+}
+.hamicon:hover .line2{
+    opacity:0;
+}
+/* .hamicon:hover .line3{ 
+    transform: rotate(-45deg);
+ } */
 
 .line1,.line2,.line3{
     width:25px;
@@ -156,11 +165,17 @@
     align-items: center;
     padding:45px 30px;
 }
- .box1{ 
+ .box{ 
     display: flex;
+    width:1000px;
+    transition: transform ease-in 0.2s;
+    margin-bottom:50px;
+ }
+ .box:hover{
+     transform: scale(1.1);
  }
  .text{
-     width:800px;
+     
      background-color:white;
      padding: 20px;
      font-family: arial;
@@ -170,14 +185,17 @@
      color:gray;
  }
  .rules-button{
-     background-color:transparent;
      color:darkgreen;
      font-size:20px;
      font-weight:100;
      border:1.5px solid darkgreen;
      padding:10px 20px;
-     transition:
+     transition:all ease 1s;
+     outline:none;
+     border-radius:2px;
  }
  .rules-button:hover{
+     background-color: darkgreen;
+     color:white;
      
  }
