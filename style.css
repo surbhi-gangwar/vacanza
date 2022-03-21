@@ -159,9 +159,17 @@
     color: white;
     font-size: 17px;
     font-family: verdana;
+    position: relative;
+    
 }
 .action:hover{
     padding-right: 40px;
+    cursor: pointer;
+    
+}
+.fa{
+    position:absolute;
+    
 }
 .container2{
     background-color:rgb(233, 229, 229);
