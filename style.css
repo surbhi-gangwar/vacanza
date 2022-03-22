@@ -84,13 +84,13 @@
 .hamicon:hover .line1{
      transform: rotate(-45deg); 
      position: relative;
-     bottom: 50px;
+     top: 19px;
 }
 .hamicon:hover .line2{
     opacity:0;
 }
  .hamicon:hover .line3{ 
-    transform: rotate(43deg);
+    transform: rotate(45deg);
     position:relative;
     top:5px; 
 }
@@ -160,17 +160,22 @@
     font-size: 17px;
     font-family: verdana;
     position: relative;
-    
+    cursor: pointer;
 }
 .action:hover{
-    padding-right: 40px;
-    cursor: pointer;
-    
+    padding-right: 50px;
 }
 .fa{
     position:absolute;
-    
+    right:25px;
+    opacity: 0;
+    transition: all ease-in 0.5s;
 }
+.action:hover .fa{
+    opacity: 1;
+    right: 15px;  
+}
+
 .container2{
     background-color:rgb(233, 229, 229);
     display: flex;
